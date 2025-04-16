@@ -15,7 +15,7 @@ public class Server {
         ServerSocket socket = new ServerSocket(port);
         socket.setSoTimeout(10000);
         try{
-            while(true){
+            while(true){  
                 System.out.println("Server is listening on port"+port);
                 Socket acceptedConnection = socket.accept();
                 System.out.println("Connection accepted from client"+acceptedConnection.getRemoteSocketAddress());
